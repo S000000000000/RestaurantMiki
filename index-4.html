@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacte</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+
+   
+    <script src='js/device.min.js'></script> 
+</head>
+
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+
+        <div id="stuck_container" class="stuck_container">
+            <div class="container">
+
+                <div class="brand">
+                    <h1 class="brand_name">
+                        <a href="./">Restaurant Miki</a>
+                    </h1>
+                </div>
+
+                <nav class="nav">
+                    <ul class="sf-menu">
+                        <li>
+                            <a href="./">Acasa</a>
+                        </li>
+                        <li class="active">
+                            <a href="index-1.html">Despre Noi</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Informatii</a>
+                                </li>
+                                <li>
+                                    <a href="index-4.html">Contacte</a>
+                                    
+                                </li>
+                                <li>
+                                    <a href="index-5.html">Diplome</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index-2.html">Ce Oferim</a>
+                        </li>
+                        <li>
+                            <a href="index-3.html">Meniu</a>
+                        </li>
+                        <li>
+                            <a href="index-4.html">Contacte</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well well__offset-3">
+            <div class="container">
+                <h2><em>Contacte</em></h2>
+                <div class="map">
+                  
+                    <iframe style="height:450px; width: 100%;" class="map_model" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1388.052937788446!2d28.202226146522612!3d45.90919297985244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b65cb8c758bf29%3A0xc75c02a9c1e876b7!2sStrada%20%C8%98tefan%20cel%20Mare%2C%20Cahul%2C%20Moldova!5e0!3m2!1sro!2s!4v1621884261904!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  
+                </div>
+                <div class="row box-3">
+                    <div class="grid_5">
+                        <h2>Contactaţi-ne</h2>
+                        <form id="contact-form" class='contact-form'>
+                            <div class="contact-form-loader"></div>
+                            <fieldset>
+                                <label class="name">
+                                    Numele dumneavoastra:
+                                    <input type="text" name="name" placeholder="" value=""
+                                           data-constraints="@Required @JustLetters"/>                
+                                    <span class="empty-message">*Spatiul dat este liber</span>
+                                    <span class="error-message">*Acesta nu este un nume validabil.</span>
+                                </label>
+                
+                                <label class="email">
+                                    Email-ul dumneavoastra:
+                                    <input type="text" name="email" placeholder="" value=""
+                                           data-constraints="@Required @Email"/>                
+                                    <span class="empty-message">*Spatiul dat este liber</span>
+                                    <span class="error-message">*Acesta nu este un email validabil.</span>
+                                </label>
+                
+                                <label class="Subject">
+                                    Subiectul:
+                                    <input type="text" name="phone" placeholder="" value=""
+                                           data-constraints="@Required"/>                
+                                    <span class="empty-message">*Spatiul dat este liber</span>
+                                    <span class="error-message">*Subiectul este prea scurt.</span>
+                                </label>
+                
+                                <label class="message">
+                                    Mesajul:
+                                    <textarea name="message" placeholder=""
+                                              data-constraints='@Required @Length(min=20,max=999999)'></textarea>                
+                                    <span class="empty-message">*Spatiul dat este liber</span>
+                                    <span class="error-message">*Mesajul este prea scurt.</span>
+                                </label>
+                
+                                <div class="btn-wr">
+                                    <a class="" href="#" data-type="reset">Sterge</a>
+                                    <a class="" href="#" data-type="submit">Trimite</a>
+                                </div>
+                            </fieldset>
+                            <div class="modal fade response-message">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">
+                                                &times;
+                                            </button>
+                                            <h4 class="modal-title">Titlu</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                           Mesajul dumneavoastra a fost expediat.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>    
+                    <div class="preffix_1 grid_6">
+                        <h2>Despre Noi</h2>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur orci sed Curabitur vel lorem sit amet nulla ullamcorper fermentum. In vitae varius augue, eu consectetur ligula. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique rhoncuseri tym.<br><br>Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique rhoncuseri tym. Etiam dui eros, laoreet sit amet est vel, commodo venenatis eros.Lamus at magna non nunc tristique.</p>
+                        <address class="address-2">
+                            <div class="address_container"><p>Restaurant Miki Inc. 9870 Adresa:Stefan cel Mare 54 Or.Cahul</p></div>
+                            <dl>
+                                <dt>Telefon:</dt> <dd>+1 800 603 6035</dd><br>
+                                <dt>FAX:</dt> <dd>+1 800 899 9898</dd><br>
+                                <dt>E-mail:</dt> <dd><a href="mailto:mail@demolink.org">Restaurant@Miki.org</a></dd>
+                            </dl>                        
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="container">
+            <ul class="socials">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-tumblr"></a></li>
+                <li><a href="#" class="fa fa-google-plus"></a></li>
+            </ul>
+            <div class="copyright">© <span id="copyright-year"></span> |
+                <a href="https://policies.google.com/privacy?hl=ro">Politica de confidențialitate</a>
+            </div>
+        </div>
+        <div class="tm"><a href="#"><img src="images/TM1_logo.png" alt=""><img src="images/TM2_logo.png" alt=""></a></div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
